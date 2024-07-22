@@ -36,13 +36,13 @@ main{
     background-color: hsl(20, 50%, 98%);
     z-index: 1;
     position: absolute;
-    top: 255px;
+    top: 220px;
    
 }
 
 .lower-container{
   margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 22px;
 }
 
 .cart{
