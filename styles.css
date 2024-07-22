@@ -1,6 +1,7 @@
 main{
     width: 100vw;
     height: 100vh;
+    background-color: hsl(12, 20%, 44%) ;
 }
  h1{
     color: hsl(14, 65%, 9%) ;
@@ -67,4 +68,21 @@ main{
     font-size: 16px;
     color: hsl(14, 86%, 42%);
     font-weight: bold;
+}
+
+.empty-state{
+   background-color: hsl(20, 50%, 98%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color:  hsl(14, 86%, 42%);
+}
+
+.note-statement{
+    font-size: 16px;
+    color:hsl(12, 20%, 44%);
 }
