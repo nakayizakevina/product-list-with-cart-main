@@ -72,22 +72,19 @@ main{
 }
 
 .empty-state{
-    background-color: hsl(20, 50%, 98%); 
-    border-radius: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: hsl(20, 50%, 98%); 
+    border-radius: 10px;
 }
+
+
 
 h2{
     color:  hsl(14, 86%, 42%);
-    padding-left: 12px;
+    font-size: 16px;
 }
 
 
