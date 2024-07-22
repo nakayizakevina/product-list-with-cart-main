@@ -1,0 +1,71 @@
+main{
+    width: 100vw;
+    height: 100vh;
+}
+ h1{
+    color: hsl(14, 65%, 9%) ;
+    margin-left: 10px;
+
+ }
+.upper-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.image{
+    width: 340px;
+    height: 200px;
+    border-radius: 6px;
+    position:relative; 
+
+}
+
+
+
+.add-to-cart{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    /* margin: auto; */
+    border:1px solid hsl(14, 65%, 9%) ;
+    border-radius: 20px;
+    background-color: hsl(20, 50%, 98%);
+    z-index: 1;
+    /* margin-top: -25px; */
+    position: absolute;
+    top: 225px;
+    /* right: 50%; */
+    /* left: 25%; */
+}
+
+.lower-container{
+  margin-left: 10px;
+}
+
+.cart{
+    font-size: 16px;
+    color:hsl(14, 65%, 9%) ;
+    font-weight: bold;
+}
+
+.subtittle{
+    font-size:14px;
+    color: hsl(12, 20%, 44%);
+}
+
+.dessert-name{
+    font-size: 16px;
+    color: hsl(14, 65%, 9%);
+    font-weight: bold;
+}
+
+.price{
+    font-size: 16px;
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
