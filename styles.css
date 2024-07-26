@@ -6,7 +6,7 @@ body{
 
  h1{
     color: hsl(14, 65%, 9%) ;
-    /* margin-left: 20px; */
+     margin-left: 20px; 
     
 }
 .upper-container{
@@ -22,7 +22,7 @@ body{
     width: 340px;
     height: 200px;
     border-radius: 6px;
-    /* position:relative;  */
+   
 }
 
 
@@ -44,7 +44,7 @@ body{
 }
 
 .lower-container{
-  /* margin-left: 10px; */
+  margin-left: 10px; 
   margin-top: 22px;
 }
 
@@ -81,6 +81,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: cyan; */
   
     
 
@@ -96,27 +97,28 @@ h2{
 
 .note-statement{
     font-size: 16px;
-    color:hsl(14, 65%, 9%);
+    color:hsl(12, 20%, 44%);
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:1366px){
 
     main{
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        /* padding: 12px; */
+        padding: 12px; 
     }
     
     .parent-container{
+        width: 70%;
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         gap: 1rem;
-        /* padding: 6px; */
+         padding: 6px; 
     }
     
     .image{
-        width: 250px;
+        width: 300px;
     }
 
     .add-to-cart{
@@ -126,12 +128,21 @@ h2{
     }
 
     .cart{
-        font-size: 12px;
+        font-size: 14px;
+    }
+     
+    .subtittle{
+        font-size:15px;
+        color: hsl(12, 20%, 44%);
     }
 
     .empty-state{
-        width: 250px;
-        height: 200px;
+        width: 300px;
+        height: 200px; 
+    }
+
+    .empty-state-icon{
+        height: 100px;
     }
     
 }
