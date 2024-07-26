@@ -1,5 +1,6 @@
 body{
     background-color:hsl(13, 31%, 94% );
+    max-width: auto;
 }
 
 main{
@@ -44,6 +45,7 @@ main{
     z-index: 1;
     position: absolute;
     top: 170px;
+    cursor: pointer;
    
 }
 
@@ -102,6 +104,43 @@ h2{
     color:hsl(20, 50%, 98%);
 }
 
+@media screen and (min-width:992px){
+
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 12px;
+    }
+    
+    .parent-container{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 6px;
+    }
+    
+    .image{
+        width: 250px;
+    }
+
+    .add-to-cart{
+        width: 150px;
+        gap:2px;
+        border-radius: 50px;
+    }
+
+    .cart{
+        font-size: 12px;
+    }
+
+    .empty-state{
+        width: 250px;
+        height: 200px;
+    }
+    
+}
+
 
 @media screen and (min-width:1440px){
 
@@ -124,3 +163,4 @@ h2{
         height: 200px;
     }
 } 
+
