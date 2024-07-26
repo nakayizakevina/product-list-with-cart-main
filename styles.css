@@ -72,19 +72,23 @@ main{
 }
 
 .empty-state{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(20, 50%, 98%); 
     border-radius: 10px;
 }
 
+.empty-state-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
+}
 
 h2{
     color:  hsl(14, 86%, 42%);
     font-size: 16px;
+    padding-left: 6px;
 }
 
 
@@ -100,6 +104,8 @@ h2{
     main{
         display: flex;
         flex-direction: row;
+        gap: 1rem;
+        padding: 12px;
     }
     .parent-container{
         width: 70%;
@@ -107,5 +113,10 @@ h2{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         padding: 6px;
+    }
+
+    .empty-state{
+        width: 340px;
+        height: 200px;
     }
 } 
