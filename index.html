@@ -21,7 +21,14 @@
    <div class="parent-container">
      <div class="parent">
         <div class="upper-container">
-          <img class="image" src="./assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">    
+          <picture>
+             
+            <source  media="(min-width:1440px)"  srcset="./assets/images/image-waffle-desktop.jpg" alt="waffle-desktop">
+            <source media="(min-width:1366px)"  srcset="./assets/images/image-waffle-tablet.jpg" alt="waffle-tablet">
+            <img  src="./assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">
+            <!-- <source srcset="product-list-with-cart-main/assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">  -->
+          </picture>
+          <!-- <img class="image" src="./assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">     -->
           <div class="add-to-cart">
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>

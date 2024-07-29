@@ -17,13 +17,19 @@ body{
     position: relative;
 }
 
+picture > *{
+    width: 340px;
+    height: 200px;
+    border-radius: 6px;
 
-.image{
+}
+
+/* .image{
     width: 340px;
     height: 200px;
     border-radius: 6px;
    
-}
+} */
 
 
 
@@ -168,5 +174,7 @@ h2{
         width: 340px;
         height: 200px;
     }
+
+  
 } 
 
