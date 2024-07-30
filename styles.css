@@ -24,16 +24,7 @@ picture > *{
 
 }
 
-/* .image{
-    width: 340px;
-    height: 200px;
-    border-radius: 6px;
-   
-} */
-
-
-
-.add-to-cart{
+button{
     width: 200px;
     display: flex;
     flex-direction: row;
@@ -46,19 +37,35 @@ picture > *{
     position: absolute;
     top: 170px;
     cursor: pointer;
+}
+
+img{
+   
+    align-self: center;
+}
+
+button:hover{
+    border:1px  solid hsl(14, 86%, 42%);
    
 }
+
+button:hover p{
+    color:hsl(14, 86%, 42%)
+}
+
+
 
 .lower-container{
   margin-left: 10px; 
   margin-top: 22px;
 }
 
-.cart{
+button p{
     font-size: 16px;
     color:hsl(14, 65%, 9%) ;
     font-weight: bold;
 }
+
 
 .subtittle{
     font-size:14px;
@@ -127,13 +134,13 @@ h2{
         width: 300px;
     }
 
-    .add-to-cart{
+    button{
         width: 150px;
         gap:2px;
         border-radius: 50px;
     }
 
-    .cart{
+    button p{
         font-size: 14px;
     }
      
