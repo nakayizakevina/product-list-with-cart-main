@@ -26,10 +26,15 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-waffle-tablet.jpg" alt="waffle-tablet">
             <img  src="./assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button class="addToCart" >
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
-          </button>      
+          </button> 
+          <div class="add-to-cart-button"  id="selectbtn" style="display: none;">
+          <span><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity" class="decrement"> </span>
+          <span class="number">01</span>
+          <span><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity" class="increment">  </span>
+          </div>
         </div>
        
         <div class="lower-container">
@@ -46,7 +51,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-creme-brulee-tablet.jpg" alt="creme-brulee-tablet">
             <img  src="./assets/images/image-creme-brulee-mobile.jpg" alt="creme-brulee-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -65,7 +70,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-macaron-tablet.jpg" alt="macaron-tablet">
             <img  src="./assets/images/image-macaron-mobile.jpg" alt="macaron-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -84,7 +89,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-tiramisu-tablet.jpg" alt="tiramisu-tablet">
             <img  src="./assets/images/image-tiramisu-mobile.jpg" alt="tiramisu-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -104,7 +109,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-baklava-tablet.jpg" alt="baklava-tablet">
             <img  src="./assets/images/image-baklava-mobile.jpg" alt="baklava-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -123,7 +128,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-meringue-tablet.jpg" alt="meringue-tablet">
             <img  src="./assets/images/image-meringue-mobile.jpg" alt="meringue-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -142,7 +147,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-cake-tablet.jpg" alt="cake-tablet">
             <img  src="./assets/images/image-cake-mobile.jpg" alt="cake-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -161,7 +166,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-brownie-tablet.jpg" alt="brownie-tablet">
             <img  src="./assets/images/image-brownie-mobile.jpg" alt="brownie-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
           </button>      
@@ -180,7 +185,7 @@
             <source media="(min-width:1366px)"  srcset="./assets/images/image-panna-cotta-tablet.jpg" alt="panna-cotta-tablet">
             <img  src="./assets/images/image-panna-cotta-mobile.jpg" alt="panna-cotta-mobile">
           </picture>
-          <button class="add-to-cart">
+          <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p> 
           </button>      
@@ -203,7 +208,46 @@
     </div> 
   </main>
 
-  
+  <script>
+          const addToCart = document.getE
+
+
+      // const addToCart = document.getElementsByClassName("addToCart");
+      // const selectbtn = document.getElementsByClassName("add-to-cart-button");
+      // addToCart.addEventListener("click",()=>{
+      //  selectbtn.style.display= "block";
+      //  addToCart.style.display = "none";
+      // });
+       
+      // selectbtn.addEventListener("click",()=>{
+      //   addToCart.style.display = "block";
+      //   selectbtn.style.display = "none";
+                        
+      // });
+
+       const increment = document.querySelector(".increment");
+       decrement = document.querySelector(".decrement");
+       number = document.querySelector(".number");
+      
+       let k = 1;
+
+       increment.addEventListener("click", ()=>{
+          k++;
+          k = (k<10) ? + k:k;       
+          number.innerText = k;
+          console.log(k);   
+       });
+       
+       decrement.addEventListener("click",()=>{
+          if(k>1) {
+            k--;
+            k=(k<10)? +k:k;
+            number.innerText=k;
+          }          
+       });
+
+
+  </script>
   
   
 
