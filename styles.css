@@ -59,6 +59,8 @@ button:hover p{
     display: flex;
     flex-direction: row;
     justify-content:space-between; 
+    align-items: center;
+    
     padding: 10px;
     border-radius: 20px;
     background-color:hsl(14, 86%, 42%);

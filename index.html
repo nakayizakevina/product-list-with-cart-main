@@ -31,9 +31,9 @@
             <p class="cart">Add to Cart</p>
           </button> 
           <div class="add-to-cart-button"  id="selectbtn" style="display: none;">
-          <span><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity" class="decrement"> </span>
-          <span class="number">01</span>
-          <span><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity" class="increment">  </span>
+           <span><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity" class="decrement"> </span>
+           <span class="number">01</span>
+           <span><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity" class="increment">  </span>
           </div>
         </div>
        
@@ -54,7 +54,12 @@
           <button>
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
-          </button>      
+          </button>   
+          <div class="add-to-cart-button"  id="selectbtn" style="display: none;">
+            <span><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity" class="decrement"> </span>
+            <span class="number">01</span>
+            <span><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity" class="increment">  </span>
+           </div>
         </div>
        
         <div class="lower-container">
@@ -209,21 +214,27 @@
   </main>
 
   <script>
-          const addToCart = document.getE
+    
 
+      // const addToCart = document.querySelectorAll(".addToCart");
+      // const selectbtn = document.querySelectorAll(".add-to-cart-button");
+      // addToCart.forEach((addToCart,index)=>{
 
-      // const addToCart = document.getElementsByClassName("addToCart");
-      // const selectbtn = document.getElementsByClassName("add-to-cart-button");
       // addToCart.addEventListener("click",()=>{
-      //  selectbtn.style.display= "block";
-      //  addToCart.style.display = "none";
+      //   selectbtn.style.display= "block";
+      //   addToCart.style.display = "none";                       
       // });
-       
-      // selectbtn.addEventListener("click",()=>{
-      //   addToCart.style.display = "block";
-      //   selectbtn.style.display = "none";
-                        
+
       // });
+
+      const addToCart = document.querySelector(".addToCart");
+      const selctbtn = document.querySelector(".add-to-cart-button");
+      addToCart.addEventListener("click", function(){
+      selctbtn.style.display = "block";
+      addToCart.style.display = "none";
+      });
+
+
 
        const increment = document.querySelector(".increment");
        decrement = document.querySelector(".decrement");
@@ -233,7 +244,7 @@
 
        increment.addEventListener("click", ()=>{
           k++;
-          k = (k<10) ? + k:k;       
+          // k = (k<10) ? + k:k;       
           number.innerText = k;
           console.log(k);   
        });
@@ -241,7 +252,7 @@
        decrement.addEventListener("click",()=>{
           if(k>1) {
             k--;
-            k=(k<10)? +k:k;
+            // k=(k<10)? +k:k;
             number.innerText=k;
           }          
        });
