@@ -76,6 +76,23 @@ button:hover p{
   margin-top: 22px;
 }
 
+.decrement, .increment{
+    padding: 3px;
+    border:2px solid hsl(20, 50%, 98%);
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.number{
+  color: hsl(20, 50%, 98%);
+  
+}
+
+source:active, img:active{
+    border: 2px solid hsl(14, 86%, 42%);
+}
+
 button p{
     font-size: 16px;
     color:hsl(14, 65%, 9%) ;
