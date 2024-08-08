@@ -56,19 +56,18 @@ button:hover p{
 .add-to-cart-button{
     
     width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between; 
-    align-items: center;
-    
-    padding: 10px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px;
+    padding: 10px; 
     border-radius: 20px;
     background-color:hsl(14, 86%, 42%);
     z-index: 1;
     position: absolute;
     top: 180px;
     cursor: pointer;
-     /* display: none;  */
 } 
 
 .lower-container{
@@ -91,6 +90,11 @@ button:hover p{
 
 source:active, img:active{
     border: 2px solid hsl(14, 86%, 42%);
+}
+
+.increment:active, .decrement:active{
+    background-color: hsl(20, 50%, 98%);
+    color: hsl(14, 86%, 42%);
 }
 
 button p{
@@ -127,10 +131,6 @@ button p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: cyan; */
-  
-    
-
 }
 
 h2{

@@ -22,15 +22,16 @@
      <div class="parent">
         <div class="upper-container">
           <picture>
-            <source  media="(min-width:1440px)"  srcset="./assets/images/image-waffle-desktop.jpg" alt="waffle-desktop">
+            <source  media="(min-width:1440px)" 
+            srcset="./assets/images/image-waffle-desktop.jpg" alt="waffle-desktop">
             <source media="(min-width:1366px)"  srcset="./assets/images/image-waffle-tablet.jpg" alt="waffle-tablet">
             <img  src="./assets/images/image-waffle-mobile.jpg" alt="waffle-mobile">
           </picture>
-          <button class="addToCart" >
+           <button class="addToCart" >
             <img src="./assets/images/icon-add-to-cart.svg" alt="">
             <p class="cart">Add to Cart</p>
-          </button> 
-          <div class="add-to-cart-button"  id="selectbtn" style="display: none;">
+          </button>  
+          <div class="add-to-cart-button"  id="selectbtn">
            <span><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity" class="decrement"> </span>
            <span class="number">01</span>
            <span><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity" class="increment">  </span>
@@ -214,35 +215,14 @@
   </main>
 
   <script>
-    
-
-      // const addToCart = document.querySelectorAll(".addToCart");
-      // const selectbtn = document.querySelectorAll(".add-to-cart-button");
-      // addToCart.forEach((addToCart,index)=>{
-
-      // addToCart.addEventListener("click",()=>{
-      //   selectbtn.style.display= "block";
-      //   addToCart.style.display = "none";                       
-      // });
-
-      // });
-
       const addToCart = document.querySelector(".addToCart");
       const selectbtn = document.querySelector(".add-to-cart-button");
       addToCart.addEventListener("click", function(){
         selectbtn.style.display = "block";
         addToCart.style.display = "none";
-      
-      
       });
       
-      selectbtn.addEventListener("click", function(){
-       addToCart.style.display = "block";
-       selectbtn.style.display = "none";
-      });
-
-
-       const increment = document.querySelector(".increment");
+      const increment = document.querySelector(".increment");
        decrement = document.querySelector(".decrement");
        number = document.querySelector(".number");
       
@@ -253,6 +233,7 @@
           k = (k<10) ? + k:k;       
           number.innerText = k;
           console.log(k);   
+
        });
        
        decrement.addEventListener("click",()=>{
